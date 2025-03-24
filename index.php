@@ -56,9 +56,9 @@ include('inc/header.php');
 					</div>	
 					
 					<p>
-					<h3>Test User Login</h3>
-					<strong>Email: </strong>admin@gemprogrammers.com<br>
-					<strong>Password:</strong>aliraza@123<br><br>						
+					<h3>Test User Logins</h3>
+					<strong>Email: </strong>brad@gmail.com<br>
+					<strong>Password:</strong>password123<br><br>						
 					</p>
 					
 				</form>   

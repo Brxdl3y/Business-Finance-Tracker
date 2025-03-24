@@ -70,24 +70,31 @@ class Income {
 	}	
 	
 	public function insert(){
-		
-		if($this->income_category && $this->amount && $_SESSION["userid"]) {
-
+		if(!empty($this->income_category) && !empty($this->amount) && !empty($this->income_date) && !empty($_SESSION["userid"])) {
+			
 			$stmt = $this->conn->prepare("
-				INSERT INTO ".$this->incomeTable."(`amount`, `date`, `category_id`, `user_id`)
-				VALUES(?, ?, ?)");
-		
+				INSERT INTO ".$this->incomeTable."(`amount`, `date`, `category_id`, `user_id`) 
+				VALUES (?, ?, ?, ?)");
+	
 			$this->amount = htmlspecialchars(strip_tags($this->amount));
 			$this->income_date = htmlspecialchars(strip_tags($this->income_date));
 			$this->income_category = htmlspecialchars(strip_tags($this->income_category));
-			
-			$stmt->bind_param("isii", $this->amount, $this->income_date, $this->income_category, $_SESSION["userid"]);
-			
+			$user_id = $_SESSION["userid"];
+	
+			$stmt->bind_param("isii", $this->amount, $this->income_date, $this->income_category, $user_id);
+	
 			if($stmt->execute()){
 				return true;
-			}		
+			} else {
+				error_log("❌ MySQL Insert Error: " . $stmt->error);
+				return false;
+			}     
+		} else {
+			error_log("⚠️ Insert Failed: Missing Data");
+			return false;
 		}
 	}
+	
 	
 	public function update(){
 		
