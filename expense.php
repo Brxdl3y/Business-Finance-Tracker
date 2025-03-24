@@ -89,6 +89,8 @@ include('inc/header.php');
 						<input type="hidden" name="action" id="action" value="" />
 						<input type="submit" name="save" id="save" class="btn btn-info" value="Save" />
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<a href="generate_report.php" class="btn btn-primary">Download PDF Report</a>
+
 					</div>
 				</div>
 			</form>

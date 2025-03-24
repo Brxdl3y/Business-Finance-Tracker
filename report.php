@@ -62,6 +62,9 @@ include('inc/header.php');
 			</div>
 		</div>
 		<div class="panel-heading" id="noRecords" style="display:none;">
+			
+		 <a href="generate_report.php" class="btn btn-primary">Download PDF Report</a>
+
 		</div>
 	</div>	
 	

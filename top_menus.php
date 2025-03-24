@@ -6,9 +6,11 @@
 		<li id="expense"><a href="expense.php">Expense</a></li>
 		<li id="report"><a href="report.php">View Report</a></li>
 		<li id="income"><a href="income.php">Income</a></li>
+		<li id="income"><a href="generate_report.php">Download PDF Report</a></li>
 		<li id="expense_category"><a href="expense_category.php">Expense Category</a></li>		
 		<li id="income_category"><a href="income_category.php">Income Category</a></li> 		
 		<li id="user"><a href="user.php">Users</a></li>	
 	<?php } ?>
+	<!-- <a href="generate_report.php" class="btn btn-primary">Download PDF Report</a> -->
 
 </ul>
