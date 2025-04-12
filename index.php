@@ -25,11 +25,11 @@ if(!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["password
 }
 include('inc/header.php');
 ?>
-<title>Expense Management System PHP</title>
+<title>Business Finance Tracker System</title>
 <?php include('inc/container.php');?>
 <div class="content"> 
 	<div class="container-fluid">
-		<h2>Expense Management System PHP</h2>			
+		<h2>Business Finance Tracker System</h2>			
         <div class="col-md-6">                    
 		<div class="panel panel-info">
 			<div class="panel-heading" style="background:#00796B;color:white;">

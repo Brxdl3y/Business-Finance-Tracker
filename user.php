@@ -14,7 +14,7 @@ if(!$user->loggedIn()) {
 }
 include('inc/header.php');
 ?>
-<title>Expense Management System PHP</title>
+<title>Business Finance Tracker System</title>
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="js/dataTables.bootstrap.min.js"></script>		
 <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" />
@@ -22,7 +22,7 @@ include('inc/header.php');
 <script src="js/user.js"></script>
 <?php include('inc/container.php');?>
 <div class="container" style="">  
-	<h2>Expense Management System PHP</h2>	
+	<h2>Business Finance Tracker System</h2>	
 	<br>
 	<?php include('top_menus.php'); ?>	
 	<div> 	

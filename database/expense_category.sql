@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `expense_category` (
-  `id` int(11) NOT NULL,
+  `id` int(11)  NOT NULL,
   `name` varchar(250) NOT NULL,
   `status` enum('enable','disable') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
